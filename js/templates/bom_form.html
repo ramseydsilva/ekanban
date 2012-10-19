@@ -1,0 +1,22 @@
+<form>
+    <div class="form-line"><label>Name:</label><input type="text" name="name" value="<%= name %>" /></div>
+    <div class="form-line"><label>Description:</label><input type="text" name="description" size="35" value="<%= description %>" /></div>
+    <div class="form-line"><label>Status:</label>
+        <select name="status">
+            <option value="0" <% if (status==0) { %>selected="selected"<% } %> >Unrequested</option>
+            <option value="1" <% if (status==1) { %>selected="selected"<% } %> >Requested</option>
+            <option value="2" <% if (status==2) { %>selected="selected"<% } %> >Delivered</option>
+        </select>
+    </div>
+    <div class="form-line"><label>In stock:</label>
+        <input type="radio" value="1" name="in_stock" <% if (in_stock==1) { %>checked<% } %> />Yes
+        <input type="radio" value="0" name="in_stock" <% if (in_stock==0) { %>checked<% } %> />No
+    </div> 
+    <div class="form-line"><label>Start date:</label>
+        <input type="text" name="start_date" value="<%= start_date %>" />
+    </div>
+    <div class="form-line"><label>Delivered date:</label>
+        <input type="text" name="delivered_date" value="<%= delivered_date %>" />
+    </div>    
+    <input type="hidden" name="cid" value="<%= cid %>" />
+</form>

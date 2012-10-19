@@ -1,0 +1,19 @@
+<div class="materials">
+<% if ( materials.models.length != 0 ) { %>
+    <div class="materials-header material">
+        <span class="material-name">Name</span>
+        <span class="material-description">Description</span>
+        <span class="material-quantity">Quantity</span>
+        <span class="material-classification">Classification</span>
+    </div>
+<% } %>
+<% for (index in materials.models) { 
+var material = materials.models[index]; %>
+    <div class="material">
+        <span class="material-name"><%= material.attributes.name %></span>
+        <span class="material-description"><%= material.attributes.description %></span>
+        <span class="material-quantity"><%= material.attributes.quantity %></span>
+        <span class="material-classification"><%= material.attributes.classification %></span>
+    </div>
+    <% } %>
+</div>

@@ -1,0 +1,14 @@
+<div class="bom <% if (completed) { %>completed<% } %> status<%= status %> <% if (!in_stock) { %>shortage<% } %> <% if (is_overdue) { %>overdue<% } %> <% if (is_current) { %>current<% } %> <% if (is_aging) { %>aging<% } %>">
+    <div class="<% if (! user.canRead('status')) { %>hide<% } %> bom-prev">&laquo;</div>
+    <div class="bom-info">
+        <div class="bom-name"><span class="value"><%= name %></span></div>
+        <div class="bom-second-row">
+            <div class="bom-aircraft"><span class="value"><% if (aircraft) { %><%= aircraft.attributes.name %><% } %></span></div>
+            <div class="bom-workcenter"><span class="value"><% if (workcenter) { %><%= workcenter.attributes.name %><% } %></span></div>
+            <div class="bom-picks">#: <span class="value" <% if (materials.length != 0) { %>href="#/bom//materials"<% } %>><%= materials.length %></span></div>
+        </div>
+        <button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only edit-bom <% if (! user.canRead('edit-button')) { %>hide<% } %>">Edit</button>
+    </div>
+    <div class="completed-check <% if (! user.canRead('completed')) { %>hide<% } %>"><img width="40" src="images/checkbox.png" /></div>
+    <div class="<% if (! user.canRead('status')) { %>hide<% } %> bom-next">&raquo;</div>
+</div>

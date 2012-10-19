@@ -1,0 +1,31 @@
+body {
+    width: 630px;
+}
+
+#bom-list li .status1, #bom-list li .status2 { 
+    left: 0;
+}
+
+#center-container, #main {
+    width: 640px;
+}
+
+.header { 
+    height: 80px;
+}
+
+#main {
+    padding-top: 0;
+}
+
+.header { 
+    height: 80px;
+}
+
+#main {
+    padding-top: 0;
+}
+
+.column {
+    min-height: 420px;
+}

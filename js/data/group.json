@@ -1,0 +1,5 @@
+[
+    {"id":1,"name":"anonymous","users": [1], "read": "*", "edit": ["status", "in_stock"]},
+    {"id":2,"name":"shop","users": [2], "read": "", "edit": ["completed", "status"], "read": ["completed", "status"]},
+    {"id":3,"name":"store","users": [3], "read": "", "edit": ["in_stock", "status"], "read": ["edit-button", "status"]}
+]

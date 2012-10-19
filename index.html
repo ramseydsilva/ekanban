@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>E-Kanban</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+	<script data-main="js/main" src="js/libs/require/require.js"></script>
+
+	<link rel="stylesheet" href="js/libs/jquery/ui/themes/base/jquery.ui.all.css">
+    <link rel="stylesheet" href="js/libs/jquery/ui/demos/demos.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/ui.css">
+</head>
+<body>
+    <div id="center-container">
+<div id="main">
+    <div id="trans-box"></div>
+    <div id="main-container">
+        <div class="header">
+            <h1 class="title">E-kanban</h1>
+            <div class="select-workcenter-div">
+                <div class="select-label">Select Workcenter:</div>
+                <select class='select-workcenter'>
+                    <option value="">ALL</option>
+                </select>
+            </div>
+            <div class="select-aircraft-div">
+                <div class="select-label">Select Aircraft:</div>
+                <select class='select-aircraft'>
+                    <option value="">ALL</option>
+                </select>
+            </div>
+            <div class="time">Last updated: <span class="value"></span></div>
+            <div class="user-login">
+            </div>
+            <div class="legend_link">Legend</div>
+        </div>
+        <div class="content">
+            <div class="column" id="column1">
+                <ul id="bom-list">
+                </ul>
+            </div>
+            <div class="column">
+            </div>
+            <div class="column">
+            </div>
+        </div>
+   </div>
+</div>
+<div id="credits">
+    <p>Developed using <a target="blank" href="http://backbonejs.org/">Backbone</a>.
+       for the Global 5/6 Program 
+    </p>
+</div>
+</div>
+<div class="edit-bom-form">
+    Edit Bom
+</div>
+<div class="legend_page">
+</div>
+<div class="materials_page">
+</div>
+</body>
+</html>
